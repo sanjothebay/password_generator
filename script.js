@@ -17,10 +17,32 @@ the correct selections included
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-var passwordLength = prompt("Please enter the number of characters you want for you new password.  It must be more than 12 but less than 128.");
+var specialCharacters = ["!@#$%^&*()"];
+var passwordLength  = 0;
+var numbers = 0;
+var lowerCases = 0;
+var upperCases = 0;
+
+
+function generatePassword(params) {
+  
+var passwordLength = parseInt(prompt("Please enter the number of characters. It must be more than 8 and less than 128."));
+
+
 var numbers = confirm("Do you want numbers in your password?");
-var lowerCases = confirm("Do you want lowercases in your password?");
-var upperCases = confirm("Do you want uppercases in your password?");
+
+
+var lowerCases = confirm("Do you want lowercases letters in your password?");
+
+
+var upperCases = confirm("Do you want uppercases letters in your password?");
+
+
+var specialCharacters = confirm("Do you want special characters in your password?");
+
+
+}
+
 
 // Write password to the #password input
 function writePassword() {
