@@ -3,18 +3,13 @@
 when clicked on generate a password Enduser is asked:
 1: length of the password 
 (length of at least 8 characters and no more than 128 characters)
-
 2: character types to include in the password
 (lowercase, uppercase, numeric, and/or special characters)
-
 3:After given answers the input should be validated 
 and give at least one character type
-
 4:After Validtaion then a password is given with 
 the correct selections included
-
 5:Displayed for the end user to see 
-
 for (var i = 0; i < 10; i++)
 var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 UsersAnswers = UsersAnswers.toLowerCase();
@@ -39,12 +34,16 @@ var questionsAsked = [
   { question: "Would you like to include numbers?", answers: "t" || "f" },
   { question: "Would you like to include special characters?", answers: "t" || "f" }
 ];
+
+function generatePassword() {
+  
 for (var i = 0; i < questionsAsked.length; i++) {
-  var answers = confirm(questionsAsked[i].q);
+  var answers = confirm(questionsAsked[i].question);
+}
 }
 
 
-var charactersChoice = numberChoice[Math.floor(Math.random() * numberChoice.length)];
+// var charactersChoice = numberChoice[Math.floor(Math.random() * numberChoice.length)];
 
 
 
@@ -59,13 +58,13 @@ function writePassword() {
 
 
 
-if (charactersChoice < 8 ) {
-  alert("Please pick a number higher than 8")
+// if (charactersChoice < 8 ) {
+//   alert("Please pick a number higher than 8")
   
-} 
-else confirm(lowercaseLettersChoice) {
+// } 
+// else confirm(lowercaseLettersChoice) {
   
-}
+// }
 
 
 
