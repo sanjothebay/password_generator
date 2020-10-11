@@ -14,13 +14,11 @@ the correct selections included
 
 5:Displayed for the end user to see 
 */
-
-
-
-
-
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+
+var passwordLength = prompt("Please enter the number of characters you want for you new password.  It must be more than 12 but less than 128.");
+
 
 // Write password to the #password input
 function writePassword() {
