@@ -29,8 +29,11 @@ function generatePassword(params) {
 var passwordLength = parseInt(prompt("Please enter the number of characters. It must be more than 8 and less than 128.") );
 console.log(passwordLength)
 if (isNaN(passwordLength === true) ) {
-  alert("Please Choose another number");
+  alert("Please Choose a number!!!!");
   return;
+}
+if (passwordLength < 8 ||passwordLength > 128) {
+  alert("Please Choose another numebr !!!! (8-128) ")
 }
 
 var numbers = confirm("Do you want numbers in your password?");
