@@ -26,7 +26,7 @@ var lowerArray = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
 var upperArray = ["abcdefghijklmnopqrstuvwxyz"]
 
 
-function generatePassword(params) {
+function askQuestions() {
   
 var passwordLength = parseInt(prompt("Please enter the number of characters. It must be more than 8 and less than 128.") );
 console.log(passwordLength)
@@ -64,7 +64,7 @@ return passOptions;
 };
 
 function generatePassword() {
-  var options = questionsAsked ();
+  var options = askQuestions  ();
   console.log(options)
 
 
@@ -89,9 +89,8 @@ function generatePassword() {
 
   return results.join("")
 
-  
 }
-
+generatePassword()
 
 // Write password to the #password input
 function writePassword() {
