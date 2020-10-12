@@ -22,6 +22,8 @@ var numbers = ["1234567890"];
 var passwordLength  = 0;
 var isLowerCases = 0;
 var isUpperCases = 0;
+var lowerArray = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
+var upperArray = ["abcdefghijklmnopqrstuvwxyz"]
 
 
 function generatePassword(params) {
@@ -38,6 +40,7 @@ if (passwordLength < 8 ||passwordLength > 128) {
 }
 
 var isLowerCases = confirm("Do you want lowercases letters in your password?");
+console.log(isLowerCases);
 var isUpperCases = confirm("Do you want uppercases letters in your password?");
 if (isUpperCases === false && isLowerCases === false ) {
   alert ("Plase Choose a character type!!!!"); 
@@ -45,14 +48,48 @@ if (isUpperCases === false && isLowerCases === false ) {
 }
 
 var numbers = confirm("Do you want numbers in your password?");
-console.log(numbers);
-if (numbers) {
-  
-}
+
 
 var specialCharacters = confirm("Do you want special characters in your password?");
-console.log(specialCharacters);
 
+var passOptions = {
+  passwordLength: passwordLength,
+  isUpperCases: isUpperCases,
+  isLowerCases: isLowerCases,
+  numbers: numbers,
+  specialCharacters: specialCharacters,
+}
+return passOptions;
+
+};
+
+function generatePassword() {
+  var options = questionsAsked ();
+  console.log(options)
+
+
+  var superArray = [];
+  var results = [];
+
+  if(options.isLowerCases === true) {
+    superArray = superArray.concat(lowerArray)
+  }
+
+  if (options.isUpperCases === true) {
+    superArray = superArray.concat(upperArray)
+  }
+  console.log(superArray)
+
+  for(var i = 0; i < options.length; i++) {
+    var i = Math.floor(Math.random() * superArray.length);
+    var digit = superArray[i]
+    results.push(digit);
+    console.log(results)
+  }
+
+  return results.join("")
+
+  
 }
 
 
