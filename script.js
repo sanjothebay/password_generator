@@ -89,8 +89,15 @@ function generatePassword() {
 
   return results.join("")
 
+
+  
 }
-generatePassword()
+
+
+
+
+
+
 
 // Write password to the #password input
 function writePassword() {
@@ -100,6 +107,8 @@ function writePassword() {
   passwordText.value = password;
 
 }
+writePassword()
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
