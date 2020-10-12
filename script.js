@@ -17,29 +17,33 @@ the correct selections included
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-var specialCharacters = ["!@#$%^&*()"];
+var specialCharacters = ["!#$%&'()*+,-./:;?@][^_`{|}~'<=>"];
 var passwordLength  = 0;
-var numbers = 0;
+var numbers = ["1234567890"];
 var lowerCases = 0;
 var upperCases = 0;
 
 
 function generatePassword(params) {
   
-var passwordLength = parseInt(prompt("Please enter the number of characters. It must be more than 8 and less than 128."));
-
+var passwordLength = parseInt(prompt("Please enter the number of characters. It must be more than 8 and less than 128.") );
+console.log(passwordLength)
+if (isNaN(passwordLength === true) ) {
+  alert("Please Choose another number");
+  return;
+}
 
 var numbers = confirm("Do you want numbers in your password?");
-
+console.log(numbers);
 
 var lowerCases = confirm("Do you want lowercases letters in your password?");
-
+console.log(lowerCases);
 
 var upperCases = confirm("Do you want uppercases letters in your password?");
-
+console.log(upperCases);
 
 var specialCharacters = confirm("Do you want special characters in your password?");
-
+console.log(specialCharacters);
 
 }
 
