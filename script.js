@@ -29,22 +29,21 @@ var upperArray = ["abcdefghijklmnopqrstuvwxyz"]
 function askQuestions() {
   
 var passwordLength = parseInt(prompt("Please enter the number of characters. It must be more than 8 and less than 128.") );
-console.log(passwordLength)
 if (isNaN(passwordLength === true) ) {
   alert("Please Choose a number!!!!");
-  return;
+  
 }
 if (passwordLength < 8 ||passwordLength > 128) {
   alert("Please Choose another numebr !!!! (8-128) ")
-  return;
+  
 }
 
 var isLowerCases = confirm("Do you want lowercases letters in your password?");
-console.log(isLowerCases);
+
 var isUpperCases = confirm("Do you want uppercases letters in your password?");
 if (isUpperCases === false && isLowerCases === false ) {
   alert ("Plase Choose a character type!!!!"); 
-  return;
+  
 }
 
 var numbers = confirm("Do you want numbers in your password?");
@@ -65,11 +64,16 @@ return passOptions;
 
 function generatePassword() {
   var options = askQuestions  ();
-  console.log(options)
-
+ 
 
   var superArray = [];
   var results = [];
+
+  // var numbers = [];
+  // var specialCharacters =[];
+  // var digit = [];
+
+  
 
   if(options.isLowerCases === true) {
     superArray = superArray.concat(lowerArray)
@@ -78,16 +82,25 @@ function generatePassword() {
   if (options.isUpperCases === true) {
     superArray = superArray.concat(upperArray)
   }
-  console.log(superArray)
+  
+  // numbers and special characters need to be added
 
-  for(var i = 0; i < options.length; i++) {
-    var i = Math.floor(Math.random() * superArray.length);
+   if (options.numbers === true) {
+     results = results.concat(numbers)
+   }
+   if (options.specialCharacters === true) {
+     results = results.concat(specialCharacters)
+   }
+
+
+  for(var index = 0; index < options.length; i++) {
+    var index = Math.floor(Math.random() * superArray.length);
     var digit = superArray[i]
     results.push(digit);
-    console.log(results)
+    
   }
 
-  return results.join("")
+  console.log("results", results)
 
 
   
@@ -105,7 +118,8 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
+  
+  
 }
 
 
