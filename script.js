@@ -18,10 +18,10 @@ the correct selections included
 var generateBtn = document.querySelector("#generate");
 
 var specialCharacters = ["!#$%&'()*+,-./:;?@][^_`{|}~'<=>"];
-var passwordLength  = 0;
 var numbers = ["1234567890"];
-var lowerCases = 0;
-var upperCases = 0;
+var passwordLength  = 0;
+var isLowerCases = 0;
+var isUpperCases = 0;
 
 
 function generatePassword(params) {
@@ -34,16 +34,21 @@ if (isNaN(passwordLength === true) ) {
 }
 if (passwordLength < 8 ||passwordLength > 128) {
   alert("Please Choose another numebr !!!! (8-128) ")
+  return;
+}
+
+var isLowerCases = confirm("Do you want lowercases letters in your password?");
+var isUpperCases = confirm("Do you want uppercases letters in your password?");
+if (isUpperCases === false && isLowerCases === false ) {
+  alert ("Plase Choose a character type!!!!"); 
+  return;
 }
 
 var numbers = confirm("Do you want numbers in your password?");
 console.log(numbers);
-
-var lowerCases = confirm("Do you want lowercases letters in your password?");
-console.log(lowerCases);
-
-var upperCases = confirm("Do you want uppercases letters in your password?");
-console.log(upperCases);
+if (numbers) {
+  
+}
 
 var specialCharacters = confirm("Do you want special characters in your password?");
 console.log(specialCharacters);
