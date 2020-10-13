@@ -21,14 +21,19 @@ var generateBtn = document.querySelector("#generate");
 
 var lowerArray = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",];
 var upperArray = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","y","z",]
-var specialCharacters = ["!","#","$","%","&","'","(",")","*","+","-",".","/",":",";","?","@","]","[","^","_","`","{","|","}","~","'","<","=",">"];
-var numbers = ["1","2","3","4","5","6","7","8","9","0",];
-var passwordLength  = 0;
-var isLowerCases = 0;
-var isUpperCases = 0;
+var specialCharacterArray = ["!","#","$","%","&","'","(",")","*","+","-",".","/",":",";","?","@","]","[","^","_","`","{","|","}","~","'","<","=",">"];
+var numberArray = ["0","1","2","3","4","5","6","7","8","9",];
+// var passwordLength  = 0;
+// var isLowerCases = 0;
+// var isUpperCases = 0;
+// var isNumbers = 0;
+// var isSpecialCharacters = 0;
 
 
 //3 Functions
+
+
+
 //First Function = Ask What we Want (length, etc)... need to validate our answers
 
 function askOptions() {
@@ -53,11 +58,16 @@ function askOptions() {
     return;
     
   }
+  var isNumbers = confirm("Would you like numbers?");
+
+  var isSpecialCharacters = confirm("Would you like special characters?");
 
   var passOptions = {
     length: length,
     isUpper: isUpper,
     isLower: isLower,
+    isNumbers: isNumbers,
+    isSpecialCharacters: isSpecialCharacters,
   }
   return passOptions;
 
@@ -80,7 +90,14 @@ function generatePassword() {
   if (options.isUpper === true) {
     superArray = superArray.concat(upperArray)
   }
-  console.log(superArray)
+
+  if(options.isNumbers === true) {
+    superArray = superArray.concat(numberArray)
+  }
+
+  if (options.isSpecialCharacters === true) {
+    superArray = superArray.concat(specialCharacterArray)
+  }
 
   for(var i = 0; i < options.length; i++) {
     var index = Math.floor(Math.random() * superArray.length);
