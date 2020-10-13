@@ -13,104 +13,86 @@ and give at least one character type
 the correct selections included
 
 5:Displayed for the end user to see 
+
 */
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-var specialCharacters = ["!#$%&'()*+,-./:;?@][^_`{|}~'<=>"];
-var numbers = ["1234567890"];
+var lowerArray = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",];
+var upperArray = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","y","z",]
+var specialCharacters = ["!","#","$","%","&","'","(",")","*","+","-",".","/",":",";","?","@","]","[","^","_","`","{","|","}","~","'","<","=",">"];
+var numbers = ["1","2","3","4","5","6","7","8","9","0",];
 var passwordLength  = 0;
 var isLowerCases = 0;
 var isUpperCases = 0;
-var lowerArray = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
-var upperArray = ["abcdefghijklmnopqrstuvwxyz"]
 
 
-function askQuestions() {
+//3 Functions
+//First Function = Ask What we Want (length, etc)... need to validate our answers
+
+function askOptions() {
+  var length = parseInt(prompt("How Long?"))
+  console.log(length)
+
+  if(isNaN(length) === true) {
+    alert(" please choose another number!");
+    return;
+  }
+  if(length < 8 || length > 128) {
+    alert(" please choose another number!");
+    return;
+
+  }
+  var isLower = confirm("Would you like lower case letters");
   
-var passwordLength = parseInt(prompt("Please enter the number of characters. It must be more than 8 and less than 128.") );
-if (isNaN(passwordLength === true) ) {
-  alert("Please Choose a number!!!!");
-  
+  var isUpper = confirm("Would you like upper case letters");
+
+  if (isUpper === false && isLower === false) {
+    alert(" please choose Character type!");
+    return;
+    
+  }
+
+  var passOptions = {
+    length: length,
+    isUpper: isUpper,
+    isLower: isLower,
+  }
+  return passOptions;
+
 }
-if (passwordLength < 8 ||passwordLength > 128) {
-  alert("Please Choose another numebr !!!! (8-128) ")
-  
-}
 
-var isLowerCases = confirm("Do you want lowercases letters in your password?");
+//2 Function =  receive answers from function 1 and , 
+// build an array for every char type where we said yes Math.random
 
-var isUpperCases = confirm("Do you want uppercases letters in your password?");
-if (isUpperCases === false && isLowerCases === false ) {
-  alert ("Plase Choose a character type!!!!"); 
-  
-}
-
-var numbers = confirm("Do you want numbers in your password?");
-
-
-var specialCharacters = confirm("Do you want special characters in your password?");
-
-var passOptions = {
-  passwordLength: passwordLength,
-  isUpperCases: isUpperCases,
-  isLowerCases: isLowerCases,
-  numbers: numbers,
-  specialCharacters: specialCharacters,
-}
-return passOptions;
-
-};
 
 function generatePassword() {
-  var options = askQuestions  ();
- 
+  var options = askOptions();
+  console.log(options)
 
   var superArray = [];
   var results = [];
 
-  // var numbers = [];
-  // var specialCharacters =[];
-  // var digit = [];
-
-  
-
-  if(options.isLowerCases === true) {
+  if(options.isLower === true) {
     superArray = superArray.concat(lowerArray)
   }
-
-  if (options.isUpperCases === true) {
+  if (options.isUpper === true) {
     superArray = superArray.concat(upperArray)
   }
-  
-  // numbers and special characters need to be added
+  console.log(superArray)
 
-   if (options.numbers === true) {
-     results = results.concat(numbers)
-   }
-   if (options.specialCharacters === true) {
-     results = results.concat(specialCharacters)
-   }
-
-
-  for(var index = 0; index < options.length; i++) {
+  for(var i = 0; i < options.length; i++) {
     var index = Math.floor(Math.random() * superArray.length);
-    var digit = superArray[i]
+    var digit = superArray[index]
     results.push(digit);
+    console.log(results);
     
   }
 
-  console.log("results", results)
+  return results.join("")
 
-
-  
 }
-
-
-
-
-
-
 
 // Write password to the #password input
 function writePassword() {
@@ -118,10 +100,8 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-  
-  
-}
 
+}
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
