@@ -69,7 +69,6 @@ function askOptions() {
 
 
 
-
   var passOptions = {
     length: length,
     isUpper: isUpper,
@@ -87,7 +86,7 @@ function askOptions() {
 
 function generatePassword() {
   var options = askOptions();
-  console.log(options)
+  
 
   var superArray = [];
   var results = [];
