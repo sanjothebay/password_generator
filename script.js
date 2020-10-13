@@ -67,6 +67,10 @@ function askOptions() {
     return;
   }
 
+  if(askOptions === false) {
+    alert("Please try again")
+    askOptions()
+ }
 
 
   var passOptions = {
