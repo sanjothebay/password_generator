@@ -19,15 +19,10 @@ the correct selections included
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-var lowerArray = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",];
-var upperArray = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","y","z",]
+var lowerArray = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","y","z",]
+var upperArray = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",];
 var specialCharacterArray = ["!","#","$","%","&","'","(",")","*","+","-",".","/",":",";","?","@","]","[","^","_","`","{","|","}","~","'","<","=",">"];
 var numberArray = ["0","1","2","3","4","5","6","7","8","9",];
-var passwordLength  = 0;
-var isLowerCases = 0;
-var isUpperCases = 0;
-var isNumbers = 0;
-var isSpecialCharacters = 0;
 
 
 //3 Functions
@@ -38,40 +33,34 @@ var isSpecialCharacters = 0;
 
 function askOptions() {
   var length = parseInt(prompt("Please enter the number of characters, It must be between 8-128.?"))
-  console.log(length)
 
   if(isNaN(length) === true) {
     alert(" please choose another number!");
-    return;
+    
   }
   if(length < 8 || length > 128) {
     alert(" please choose another number!");
-    return;
 
   }
   var isLower = confirm("Would you like lower case letters");
   
   var isUpper = confirm("Would you like upper case letters");
-
-  if (isUpper === false && isLower === false) {
-    alert(" please choose Character type!");
-    return;
-    
-  }
-
+  
   var isNumbers = confirm("Would you like numbers?");
+  
   var isSpecialCharacters = confirm("Would you like special characters?");
   
-  if (isNumbers === false && isSpecialCharacters === false) {
-    alert(" please choose Character type!");
-    return;
-  }
+  
+    if (isUpper === false && isLower === false && isNumbers === false && isSpecialCharacters === false ) {
+      alert("Please choose a Character type and restart again!");
+      askOptions()
+      
+    }
 
-  if(askOptions === false) {
-    alert("Please try again")
-    askOptions()
- }
-
+  // if (isNumbers === false && isSpecialCharacters === false) {
+  //   alert(" please choose a Character type and restart!");
+  //   return;
+  // }
 
   var passOptions = {
     length: length,
