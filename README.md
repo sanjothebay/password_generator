@@ -36,9 +36,10 @@ THEN the password is either displayed in an alert or written to the page
 ```
 
 
-![image](https://user-images.githubusercontent.com/67298961/96299145-2f306800-0fb9-11eb-99e6-883bf869ee2e.png) ![image](https://user-images.githubusercontent.com/67298961/96299231-55ee9e80-0fb9-11eb-8903-ccf903710eea.png) 
+![image](https://user-images.githubusercontent.com/67298961/96299145-2f306800-0fb9-11eb-99e6-883bf869ee2e.png) 
 
 
+![image](https://user-images.githubusercontent.com/67298961/96299231-55ee9e80-0fb9-11eb-8903-ccf903710eea.png) 
 
 
 ![image](https://user-images.githubusercontent.com/67298961/96299307-7a4a7b00-0fb9-11eb-91c2-6c5cd404877b.png)
