@@ -32,3 +32,22 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
 ![image](https://user-images.githubusercontent.com/67298961/96301104-4fadf180-0fbc-11eb-8d70-0d50ca868523.png)
+
+![image](https://user-images.githubusercontent.com/67298961/96301378-b9c69680-0fbc-11eb-9465-7e0c91a7ef1d.png)
+
+![image](https://user-images.githubusercontent.com/67298961/96301538-f6928d80-0fbc-11eb-9395-8c3303109aac.png)
+
+![image](https://user-images.githubusercontent.com/67298961/96301441-d236b100-0fbc-11eb-8de7-a1546a5ea3e0.png)
+
+![image](https://user-images.githubusercontent.com/67298961/96301595-0ad68a80-0fbd-11eb-9e70-586a6143703e.png)
+
+![image](https://user-images.githubusercontent.com/67298961/96301667-1f1a8780-0fbd-11eb-96c9-dcea25e6bb33.png)
+
+
+
+
+
+
+
+
+
