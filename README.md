@@ -1,7 +1,13 @@
 # tech_monterre_hw_password_generator
 
-
 https://sanjothebay.github.io/tech_monterre_hw_password_generator/
+
+https://github.com/sanjothebay/tech_monterre_hw_password_generator
+
+
+![image](https://user-images.githubusercontent.com/67298961/96298870-c77a1d00-0fb8-11eb-834e-912aa295f9db.png)
+
+
 
 ** create an application that an employee can use to generate a random password based on criteria they’ve selected by modifying starter code. This app will run in the browser, and 
 will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished user interface that is responsive, ensuring that it 
@@ -29,9 +35,14 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
 
-## Mock-Up
 
-The following image shows the web application's appearance and functionality:
+![image](https://user-images.githubusercontent.com/67298961/96299145-2f306800-0fb9-11eb-99e6-883bf869ee2e.png) ![image](https://user-images.githubusercontent.com/67298961/96299231-55ee9e80-0fb9-11eb-8903-ccf903710eea.png) 
 
 
-![image](https://user-images.githubusercontent.com/67298961/95657095-3a2a5a80-0ad8-11eb-9548-f5d63618a0f1.png)
+
+
+![image](https://user-images.githubusercontent.com/67298961/96299307-7a4a7b00-0fb9-11eb-91c2-6c5cd404877b.png)![image](https://user-images.githubusercontent.com/67298961/96299457-ba116280-0fb9-11eb-97cc-cfd8c016396b.png)![image](https://user-images.githubusercontent.com/67298961/96299542-d31a1380-0fb9-11eb-8ec2-03b78d493ba7.png)![image](https://user-images.githubusercontent.com/67298961/96299618-efb64b80-0fb9-11eb-8519-a641c6c4b0da.png)![image](https://user-images.githubusercontent.com/67298961/96299696-09579300-0fba-11eb-855b-638120844293.png)
+
+
+
+![image](https://user-images.githubusercontent.com/67298961/96299385-9c43fd80-0fb9-11eb-9703-c157c776201a.png)
