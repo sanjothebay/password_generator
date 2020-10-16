@@ -42,11 +42,19 @@ THEN the password is either displayed in an alert or written to the page
 
 
 ![image](https://user-images.githubusercontent.com/67298961/96299307-7a4a7b00-0fb9-11eb-91c2-6c5cd404877b.png)
+
+
 ![image](https://user-images.githubusercontent.com/67298961/96299457-ba116280-0fb9-11eb-97cc-cfd8c016396b.png)
+
+
 ![image](https://user-images.githubusercontent.com/67298961/96299542-d31a1380-0fb9-11eb-8ec2-03b78d493ba7.png)
+
+
 ![image](https://user-images.githubusercontent.com/67298961/96299618-efb64b80-0fb9-11eb-8519-a641c6c4b0da.png)
+
+
 ![image](https://user-images.githubusercontent.com/67298961/96299696-09579300-0fba-11eb-855b-638120844293.png)
 
 
-
 ![image](https://user-images.githubusercontent.com/67298961/96299385-9c43fd80-0fb9-11eb-9703-c157c776201a.png)
+
