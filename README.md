@@ -55,9 +55,16 @@ with all the requirements. this took a lot of think and asking for help on aksab
 with the help gotten and guidance I was able to over come the challenge. 
 
 
+![image](https://user-images.githubusercontent.com/67298961/96357431-43f82300-10c1-11eb-8317-aac9d900a98c.png)
+
 ![image](https://user-images.githubusercontent.com/67298961/96301104-4fadf180-0fbc-11eb-8d70-0d50ca868523.png)
 
 ![image](https://user-images.githubusercontent.com/67298961/96301378-b9c69680-0fbc-11eb-9465-7e0c91a7ef1d.png)
+
+From there i created my If`s statements in case the end user picks no to al the 
+questions asked,if the lengths is shorter then 8 or longer then 128 characters.
+This was the time i created my place holders to make sure the answers inputted by the 
+end-user get stored. 
 
 ![image](https://user-images.githubusercontent.com/67298961/96301538-f6928d80-0fbc-11eb-9395-8c3303109aac.png)
 
