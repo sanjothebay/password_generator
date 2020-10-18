@@ -34,11 +34,21 @@ I started off by creating the prompts and confirmations questions. To
 asked to the end-user. The question were practically given on the instructions.
 once that was completed i moved to Creating the variables 
 that contained the possible array of elements that can be generated and created.
-From there i created my If`s statements in case the end user picks no to al the 
-questions asked ,
-if the lengths is shorter then 8 or longer then 128 characters.
+
+![image](https://user-images.githubusercontent.com/67298961/96357431-43f82300-10c1-11eb-8317-aac9d900a98c.png)
+
+![image](https://user-images.githubusercontent.com/67298961/96301104-4fadf180-0fbc-11eb-8d70-0d50ca868523.png)
+
+![image](https://user-images.githubusercontent.com/67298961/96301378-b9c69680-0fbc-11eb-9465-7e0c91a7ef1d.png)
+
+Here I created my If`s statements in case the end user picks no to al the 
+questions asked,if the lengths is shorter then 8 or longer then 128 characters.
 This was the time i created my place holders to make sure the answers inputted by the 
 end-user get stored. 
+
+![image](https://user-images.githubusercontent.com/67298961/96301538-f6928d80-0fbc-11eb-9395-8c3303109aac.png)
+
+![image](https://user-images.githubusercontent.com/67298961/96301441-d236b100-0fbc-11eb-8de7-a1546a5ea3e0.png)
 
 I created a for loop to go through the array and choose the possible randomly 
 with a 
@@ -50,26 +60,13 @@ from here was the part i whet to make sure i had my if statements  that if  a tr
 given by the user gets stored to generate the password as what the end -user input.
 Last making sure that the answers is retuned and joined together.
 
-over all i was able to create a working password generator app.
-with all the requirements. this took a lot of think and asking for help on aksabc.
-with the help gotten and guidance I was able to over come the challenge. 
-
-
-![image](https://user-images.githubusercontent.com/67298961/96357431-43f82300-10c1-11eb-8317-aac9d900a98c.png)
-
-![image](https://user-images.githubusercontent.com/67298961/96301104-4fadf180-0fbc-11eb-8d70-0d50ca868523.png)
-
-![image](https://user-images.githubusercontent.com/67298961/96301378-b9c69680-0fbc-11eb-9465-7e0c91a7ef1d.png)
-
-From there i created my If`s statements in case the end user picks no to al the 
-questions asked,if the lengths is shorter then 8 or longer then 128 characters.
-This was the time i created my place holders to make sure the answers inputted by the 
-end-user get stored. 
-
-![image](https://user-images.githubusercontent.com/67298961/96301538-f6928d80-0fbc-11eb-9395-8c3303109aac.png)
-
-![image](https://user-images.githubusercontent.com/67298961/96301441-d236b100-0fbc-11eb-8de7-a1546a5ea3e0.png)
+![image](https://user-images.githubusercontent.com/67298961/96357475-f6c88100-10c1-11eb-975d-986b59fdf1a7.png)
 
 ![image](https://user-images.githubusercontent.com/67298961/96301595-0ad68a80-0fbd-11eb-9e70-586a6143703e.png)
 
 ![image](https://user-images.githubusercontent.com/67298961/96301667-1f1a8780-0fbd-11eb-96c9-dcea25e6bb33.png)
+
+over all i was able to create a working password generator app.
+with all the requirements. this took a lot of think and asking for help on aksabc.
+with the help gotten and guidance I was able to over come the challenge. 
+
