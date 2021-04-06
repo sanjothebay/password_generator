@@ -1,8 +1,8 @@
 # tech_monterre_hw_password_generator
 
-https://sanjothebay.github.io/tech_monterre_hw_password_generator/
+https://sanjothebay.github.io/password_generator/
 
-https://github.com/sanjothebay/tech_monterre_hw_password_generator
+https://github.com/sanjothebay/password_generator
 
 This is my third homework assignment given to us by Technology de Monterrey Mexico 
 Coding.To Create an application that an employee can use to generate a random password 
